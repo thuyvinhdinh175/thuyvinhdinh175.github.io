@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kkmeansnt.github.io/static/css/main.31f13209.css",
+    "main.js": "/kkmeansnt.github.io/static/js/main.5945935d.js",
+    "static/js/787.157bd1c4.chunk.js": "/kkmeansnt.github.io/static/js/787.157bd1c4.chunk.js",
+    "index.html": "/kkmeansnt.github.io/index.html",
+    "main.31f13209.css.map": "/kkmeansnt.github.io/static/css/main.31f13209.css.map",
+    "main.5945935d.js.map": "/kkmeansnt.github.io/static/js/main.5945935d.js.map",
+    "787.157bd1c4.chunk.js.map": "/kkmeansnt.github.io/static/js/787.157bd1c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31f13209.css",
+    "static/js/main.5945935d.js"
+  ]
+}
