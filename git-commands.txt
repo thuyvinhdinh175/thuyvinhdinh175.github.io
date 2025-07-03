@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# List of files we want to add to Git
+FILES_TO_ADD=(
+  "index.html"
+  ".gitignore"
+  "README.md"
+  "assets/css/styles.css"
+  "assets/docs/index.pdf"
+  "assets/images/Portfolio.png"
+  "assets/images/vinh-emoji.png"
+  "assets/css/.gitkeep"
+  "assets/docs/.gitkeep"
+  "assets/images/.gitkeep"
+)
+
+# Generate git add commands
+for file in "${FILES_TO_ADD[@]}"; do
+  echo "git add \"$file\""
+done
+
+# Generate commit command
+echo "git commit -m \"Reorganize website structure for better maintainability
+
+- Created organized directory structure (assets/css, assets/images, assets/docs)
+- Moved files to appropriate directories
+- Updated file references in HTML and CSS
+- Added .gitignore for unnecessary files
+- Updated README with project structure and deployment instructions\""
+
+# Generate push command
+echo "git push origin main"
