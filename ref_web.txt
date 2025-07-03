@@ -1,0 +1,1217 @@
+/* Web Design */
+
+position: relative;
+width: 1440px;
+height: 2670px;
+
+background: #161513;
+
+
+/* Footer */
+
+position: absolute;
+width: 1448.25px;
+height: 418.76px;
+left: -8px;
+top: 2251px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #191919;
+
+
+/* Contact Title */
+
+position: absolute;
+left: 22.42%;
+right: 70.61%;
+top: 19.73%;
+bottom: 71.91%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 23.5258px;
+line-height: 35px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+
+/* Contact SubTitle */
+
+position: absolute;
+left: 22.44%;
+right: 30.88%;
+top: 36.3%;
+bottom: 48.66%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 14.1155px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* Contact SubTitle */
+
+position: absolute;
+left: 23.96%;
+right: 62.51%;
+top: 56.6%;
+bottom: 38.39%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14.1155px;
+line-height: 21px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* Email Icon */
+
+position: absolute;
+left: 22.44%;
+right: 76.42%;
+top: 57.07%;
+bottom: 38.98%;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 9.38%;
+right: 9.37%;
+top: 18.75%;
+bottom: 18.75%;
+
+border: 0.884256px solid #FFFFFF;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 21.88%;
+right: 21.87%;
+top: 31.25%;
+bottom: 46.87%;
+
+border: 0.884256px solid #FFFFFF;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Contact Icons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 27px;
+
+position: absolute;
+left: 22.42%;
+right: 70.06%;
+top: 71.46%;
+bottom: 24.24%;
+
+
+
+/* instagram */
+
+width: 18px;
+height: 18px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* x */
+
+width: 17px;
+height: 16px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* youtube */
+
+width: 20px;
+height: 15px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Experience Section */
+
+position: absolute;
+width: 810px;
+height: 448px;
+left: 315px;
+top: 1696px;
+
+
+
+/* 1st Experience */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.11%;
+
+
+
+/* Experience Title */
+
+position: absolute;
+left: 5.53%;
+right: 46.46%;
+top: 0%;
+bottom: 92.63%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 21.7405px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Experience SubTitle */
+
+position: absolute;
+left: 0.51%;
+right: 0.77%;
+top: 12.5%;
+bottom: 74.11%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* or 22px */
+display: flex;
+align-items: center;
+
+/* Light Grey */
+color: #8491A0;
+
+
+
+/* google-logo */
+
+position: absolute;
+left: 0%;
+right: 95.79%;
+top: 0%;
+bottom: 92.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #FFC107;
+
+
+/* Vector */
+
+position: absolute;
+left: 13.14%;
+right: 21.63%;
+top: 8.33%;
+bottom: 59.35%;
+
+background: #FF3D00;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.91%;
+right: 22.06%;
+top: 58.45%;
+bottom: 8.33%;
+
+background: #4CAF50;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 8.33%;
+top: 41.67%;
+bottom: 19.11%;
+
+background: #1976D2;
+
+
+/* Experience */
+
+position: absolute;
+left: 81.47%;
+right: 0%;
+top: 1.12%;
+bottom: 93.97%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Light Grey */
+color: #8491A0;
+
+
+
+/* 2nd Experience */
+
+position: absolute;
+left: 0.64%;
+right: 0%;
+top: 37.05%;
+bottom: 37.05%;
+
+
+
+/* Experience Title */
+
+position: absolute;
+left: 5.92%;
+right: 45.43%;
+top: 37.05%;
+bottom: 55.58%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 21.7405px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Experience SubTitle */
+
+position: absolute;
+left: 0.64%;
+right: 0.64%;
+top: 49.55%;
+bottom: 37.05%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* or 22px */
+display: flex;
+align-items: center;
+
+/* Light Grey */
+color: #8491A0;
+
+
+
+/* apple-logo */
+
+position: absolute;
+left: 0.64%;
+right: 96.01%;
+top: 37.28%;
+bottom: 55.83%;
+
+background: #FFFFFF;
+
+
+/* Experience */
+
+position: absolute;
+left: 81.47%;
+right: 0%;
+top: 38.17%;
+bottom: 56.92%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Light Grey */
+color: #8491A0;
+
+
+
+/* 3rd Experience */
+
+position: absolute;
+left: 0.26%;
+right: 0%;
+top: 73.88%;
+bottom: 0%;
+
+
+
+/* Experience Title */
+
+position: absolute;
+left: 6.05%;
+right: 56.24%;
+top: 73.88%;
+bottom: 18.75%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 21.7405px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Experience SubTitle */
+
+position: absolute;
+left: 0.26%;
+right: 1.03%;
+top: 86.61%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* or 22px */
+display: flex;
+align-items: center;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* meta-logo */
+
+position: absolute;
+left: 0.77%;
+right: 95.24%;
+top: 75.22%;
+bottom: 19.87%;
+
+background: #5BADFF;
+
+
+/* Experience */
+
+position: absolute;
+left: 81.47%;
+right: 0%;
+top: 75.22%;
+bottom: 19.87%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4937px;
+line-height: 150%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Light Grey */
+color: #8491A0;
+
+
+
+/* Experience Title */
+
+position: absolute;
+width: 213px;
+height: 36px;
+left: 613px;
+top: 1603px;
+
+
+
+/* Experience */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 36px;
+/* identical to box height, or 102% */
+text-transform: uppercase;
+
+/* Blue Gradient */
+background: linear-gradient(180deg, #5BADFF 0%, #1373D1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* 2nd Project */
+
+position: absolute;
+width: 390px;
+height: 301px;
+left: 735px;
+top: 1206px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #2A2A2A;
+border-radius: 18px;
+
+
+/* project-thumbnail-2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 21.93%;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(css-2023.jpg);
+border-radius: 18px 18px 0px 0px;
+
+
+/* Project Title */
+
+position: absolute;
+left: 5.9%;
+right: 56.3%;
+top: 82.06%;
+bottom: 4.65%;
+
+
+
+/* CSS TUTORIAL */
+
+position: absolute;
+left: 5.9%;
+right: 56.3%;
+top: 88.7%;
+bottom: 4.65%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 20px;
+/* identical to box height, or 105% */
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* CLICK HERE TO VISIT */
+
+position: absolute;
+left: 5.9%;
+right: 65.95%;
+top: 82.06%;
+bottom: 11.63%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 10px;
+line-height: 19px;
+/* identical to box height, or 190% */
+text-transform: uppercase;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* View Icon */
+
+position: absolute;
+left: 89.54%;
+right: 6.57%;
+top: 85.38%;
+bottom: 9.94%;
+
+background: #FFFFFF;
+transform: matrix(-0.72, 0.69, -0.72, -0.69, 0, 0);
+
+
+/* 1st Project */
+
+position: absolute;
+width: 390px;
+height: 301px;
+left: 315px;
+top: 1206px;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #2A2A2A;
+border-radius: 18px;
+
+
+/* project-thumbnail-1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 21.93%;
+
+background: url(HTML-2023.jpg);
+border-radius: 18px 18px 0px 0px;
+
+
+/* Project Title */
+
+position: absolute;
+left: 5.9%;
+right: 53.89%;
+top: 82.06%;
+bottom: 4.65%;
+
+
+
+/* HTML TUTORIAL */
+
+position: absolute;
+left: 5.9%;
+right: 53.89%;
+top: 88.7%;
+bottom: 4.65%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 19px;
+line-height: 20px;
+/* identical to box height, or 105% */
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* CLICK HERE TO VISIT */
+
+position: absolute;
+left: 5.9%;
+right: 67.02%;
+top: 82.06%;
+bottom: 11.63%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 10px;
+line-height: 19px;
+/* identical to box height, or 190% */
+text-transform: uppercase;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* View Icon */
+
+position: absolute;
+left: 89.54%;
+right: 6.57%;
+top: 85.38%;
+bottom: 9.94%;
+
+background: #FFFFFF;
+transform: matrix(-0.72, 0.69, -0.72, -0.69, 0, 0);
+
+
+/* Projects Title */
+
+position: absolute;
+width: 182px;
+height: 36px;
+left: 625.25px;
+top: 1143px;
+
+
+
+/* Projects */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 36px;
+/* identical to box height, or 102% */
+text-transform: uppercase;
+
+/* Orange Gradient */
+background: linear-gradient(180deg, #FF8660 0%, #D5491D 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* EXPERIENCE WITH */
+
+position: absolute;
+width: 208px;
+height: 30px;
+left: 608px;
+top: 924px;
+
+
+
+/* EXPERIENCE WITH */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: 0.12em;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* Logos */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 60.45px;
+
+position: absolute;
+width: 446.82px;
+height: 42px;
+left: 496px;
+top: 1002px;
+
+
+
+/* javascript */
+
+width: 42px;
+height: 42px;
+
+background: linear-gradient(180deg, #FDFDFD 0%, rgba(255, 255, 255, 0.18) 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* nodejs */
+
+width: 42px;
+height: 42px;
+
+background: linear-gradient(180deg, #FDFDFD 0%, rgba(255, 255, 255, 0.18) 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* html */
+
+width: 37.04px;
+height: 42px;
+
+background: linear-gradient(180deg, #FDFDFD 0%, rgba(255, 255, 255, 0.18) 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* css */
+
+width: 37px;
+height: 42px;
+
+background: linear-gradient(180deg, #FDFDFD 0%, rgba(255, 255, 255, 0.18) 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* reactjs */
+
+width: 47px;
+height: 42px;
+
+background: linear-gradient(180deg, #FDFDFD 0%, rgba(255, 255, 255, 0.18) 100%);
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Action Buttons */
+
+position: absolute;
+width: 417px;
+height: 64px;
+left: 496px;
+top: 772px;
+
+
+
+/* Get In Touch Button */
+
+position: absolute;
+left: 0%;
+right: 53.24%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Rectangle 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 53.24%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 50px;
+
+
+/* Get In Touch */
+
+position: absolute;
+left: 7.19%;
+right: 60.19%;
+top: 25%;
+bottom: 25%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 21.38px;
+line-height: 32px;
+/* identical to box height */
+
+color: #161513;
+
+border: 0.324687px solid #FFFFFF;
+
+
+/* Download CV Button */
+
+position: absolute;
+left: 51.08%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 51.08%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #FFFFFF;
+border-radius: 50px;
+
+
+/* Download CV */
+
+position: absolute;
+left: 57.79%;
+right: 6.95%;
+top: 25%;
+bottom: 25%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 21.38px;
+line-height: 32px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* avatar */
+
+position: absolute;
+width: 251px;
+height: 223px;
+left: 598px;
+top: 180px;
+
+
+
+/* Avatar Background */
+
+position: absolute;
+left: 3.59%;
+right: 11.55%;
+top: 4.04%;
+bottom: 0.45%;
+
+background: linear-gradient(137.59deg, #FF8660 9.86%, #8000FF 104.95%);
+
+
+/* Avatar */
+
+position: absolute;
+left: 3.59%;
+right: 11.55%;
+top: 4.04%;
+bottom: 0.45%;
+
+background: url(Mask group.png);
+
+
+/* Header */
+
+position: absolute;
+width: 1440px;
+height: 82.18px;
+left: 1px;
+top: 0px;
+
+
+
+/* Header Background */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #222222;
+opacity: 0.7;
+box-shadow: 0px 4.36364px 16px -2.18182px rgba(0, 0, 0, 0.1);
+
+
+/* Navbar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 71px;
+
+position: absolute;
+left: 45.14%;
+right: 21.96%;
+top: 37.72%;
+bottom: 38.38%;
+
+
+
+/* Home */
+
+width: 48px;
+height: 19.64px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Projects */
+
+width: 63.45px;
+height: 19.64px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Experience */
+
+width: 84.64px;
+height: 19.64px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Contact */
+
+width: 64.64px;
+height: 19.64px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* logo */
+
+position: absolute;
+left: 21.81%;
+right: 72.64%;
+top: 1.22%;
+bottom: 1.44%;
+
+background: url(logo.png);
+
+
+/* About Me */
+
+position: absolute;
+width: 679px;
+height: 108px;
+left: 384px;
+top: 610px;
+
+
+
+/* About Me */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.02em;
+
+/* Secondary Text */
+color: #C5C5C5;
+
+
+
+/* Title */
+
+position: absolute;
+width: 670px;
+height: 127px;
+left: 384px;
+top: 444px;
+
+
+
+/* Title */
+
+position: absolute;
+left: 0.9%;
+right: 1.19%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 63px;
+/* or 115% */
+text-align: center;
+
+color: #FFFFFF;
+
+
