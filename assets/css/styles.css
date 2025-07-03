@@ -37,12 +37,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--primary-bg);
-    background-image: url('../images/Portfolio.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #161513; /* Solid dark background */
     color: var(--primary-text);
     line-height: 1.6;
     max-width: 1152px;

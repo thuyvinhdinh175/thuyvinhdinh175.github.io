@@ -1,0 +1,39 @@
+/* Static Geometric Pattern Background */
+.background-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #161513;
+    overflow: hidden;
+}
+
+/* Main grid pattern */
+.background-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+/* Diagonal pattern overlay */
+.background-pattern::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(45deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 35px 35px;
+}
