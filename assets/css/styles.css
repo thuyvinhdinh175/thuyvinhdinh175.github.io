@@ -1,6 +1,15 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* Heart Animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 /* Global Styles */
 * {
     margin: 0;
@@ -39,6 +48,8 @@ body {
     max-width: 1152px;
     margin: 0 auto;
     position: relative;
+    hyphens: none; /* Disable hyphenation globally */
+    word-break: keep-all; /* Prevent breaking words globally */
 }
 
 /* Typography - Titles use Poppins */
@@ -126,6 +137,19 @@ header {
     font-size: 16px;
     font-weight: 700;
     color: var(--primary-text);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.logo-text:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.logo-text .heart {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
 }
 
 .header-buttons {
@@ -207,6 +231,9 @@ header {
     color: var(--secondary-text);
     margin-bottom: 32px;
     letter-spacing: 0.02em;
+    text-align: center; /* Center align for hero text */
+    hyphens: none; /* Disable hyphenation to prevent word breaks */
+    word-break: keep-all; /* Prevent breaking words */
 }
 
 .cta-buttons {
@@ -252,6 +279,7 @@ header {
     max-width: 640px;
     margin: 0 auto;
     padding: 0 16px;
+    text-align: justify; /* Ensure rectangular text block */
 }
 
 .about-content p {
@@ -259,6 +287,9 @@ header {
     line-height: 1.8;
     color: var(--secondary-text);
     margin-bottom: 16px;
+    text-align: justify; /* Ensure rectangular text block */
+    hyphens: none; /* Disable hyphenation to prevent word breaks */
+    word-break: keep-all; /* Prevent breaking words */
 }
 
 /* Skills Section */
@@ -491,7 +522,7 @@ header {
 
 .experience-item {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 36px; /* Increased from 32px for better spacing with larger text */
     position: relative;
 }
 
@@ -514,31 +545,40 @@ header {
 
 .experience-content h3 {
     font-weight: 700;
-    font-size: 17px;
-    line-height: 26px;
-    margin-bottom: 4px;
+    font-size: 18px; /* Increased from 17px */
+    line-height: 28px; /* Increased from 26px */
+    margin-bottom: 5px; /* Increased from 4px */
 }
 
 .duration {
-    font-size: 11px;
+    font-size: 12px; /* Increased from 11px */
     line-height: 150%;
     color: var(--light-grey);
-    margin-bottom: 12px;
+    margin-bottom: 14px; /* Increased from 12px */
     display: block;
+    font-weight: 500; /* Enhanced weight */
 }
 
 .description {
-    font-size: 11px;
-    line-height: 150%;
-    color: var(--light-grey);
+    font-size: 12.65px; /* Increased by 15% from 11px */
+    line-height: 160%; /* Increased from 150% for better readability */
+    color: #a0a9b8; /* Slightly darker than var(--light-grey) for better readability */
+    text-align: justify; /* Ensure rectangular text block */
+    hyphens: none; /* Disable hyphenation to prevent word breaks */
+    word-break: keep-all; /* Prevent breaking words */
+    font-weight: 400; /* Slightly enhanced weight for better visibility */
 }
 
 /* Contact Section */
 .contact {
-    background-color: var(--secondary-bg);
-    padding: 64px 32px;
+    background-color: rgba(25, 25, 25, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect for modern browsers */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    padding: 42px 32px; /* Further reduced to account for removed description */
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: var(--border-radius); /* Rounded corners */
 }
 
 .contact-container {
@@ -547,20 +587,22 @@ header {
     align-items: center;
     max-width: 640px;
     margin: 0 auto;
+    padding: 8px; /* Reduced from 10px */
 }
 
 .contact h2 {
     font-weight: 700;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 24px; /* Reduced from 28px */
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    margin-bottom: 13px; /* Reduced from 16px */
+    color: var(--primary-text); /* Ensure visibility against transparent background */
 }
 
 .social-icons {
     display: flex;
     gap: 22px;
-    margin-bottom: 24px;
+    margin-bottom: 26px; /* Increased from 19px to account for removed description */
 }
 
 .social-icons a {
@@ -579,21 +621,21 @@ header {
 .contact-description {
     font-weight: 300;
     font-size: 11px;
-    line-height: 17px;
+    line-height: 15px; /* Reduced from 17px */
     letter-spacing: 0.02em;
-    color: var(--secondary-text);
+    color: var(--primary-text); /* Lighter text for better contrast */
     max-width: 480px;
-    margin-bottom: 32px;
+    margin-bottom: 26px; /* Reduced from 32px */
     text-align: center;
 }
 
 .email {
     font-weight: 600;
     font-size: 11px;
-    line-height: 17px;
+    line-height: 15px; /* Reduced from 17px */
     letter-spacing: 0.02em;
-    color: var(--secondary-text);
-    margin-bottom: 12px;
+    color: var(--primary-text); /* Ensure visibility */
+    margin-bottom: 10px; /* Reduced from 12px */
     display: flex;
     align-items: center;
     justify-content: center;
