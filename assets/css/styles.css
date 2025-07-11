@@ -45,6 +45,8 @@ body {
     position: relative;
     hyphens: none; /* Disable hyphenation globally */
     word-break: keep-all; /* Prevent breaking words globally */
+    padding: 0 16px; /* Add default padding for smaller screens */
+    box-sizing: border-box;
 }
 
 /* Typography - Titles use Poppins */
@@ -121,6 +123,7 @@ header {
     right: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -418,11 +421,13 @@ header {
 }
 
 .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-top: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-card {
@@ -486,6 +491,12 @@ header {
     line-height: 16px;
     text-transform: uppercase;
     margin: 0;
+}
+
+/* Special styling for AI-POWERED DATA QUALITY MONITOR card */
+.project-card:nth-child(4) .project-info h3 {
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .view-icon {
@@ -642,20 +653,49 @@ header {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 16px;
+    }
+    
     .project-cards {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .project-card {
+        width: 100%;
     }
     
     .hero-content h1 {
         font-size: 36px;
         line-height: 44px;
     }
+    
+    .achievement-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .achievement-card {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
+    
     header {
         padding: 12px 16px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
     }
     
     .header-buttons {
@@ -667,9 +707,94 @@ header {
         font-size: 11px;
     }
     
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 32px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .hero-content p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .avatar {
+        width: 160px;
+        height: 142px;
+        margin-bottom: 24px;
+    }
+    
+    .cta-buttons {
+        gap: 12px;
+    }
+    
+    .btn {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+    
+    section {
+        padding: 32px 0;
+    }
+    
     .skill-icons {
-        gap: 24px;
+        gap: 20px;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .skill-icon i {
+        font-size: 24px;
+    }
+    
+    .achievement-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .project-cards {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+    
+    .achievement-card,
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .achievement-info h3,
+    .project-info h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .experience-item {
+        margin-bottom: 24px;
+    }
+    
+    .experience-content h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .contact {
+        padding: 32px 16px;
     }
     
     .contact h2,
@@ -681,34 +806,196 @@ header {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0 8px;
+    }
+    
+    header {
+        padding: 8px 12px;
+    }
+    
+    .logo-text {
+        font-size: 12px;
+    }
+    
     .header-buttons {
         gap: 4px;
     }
     
     .header-btn {
-        padding: 5px 8px;
+        padding: 6px 12px;
         font-size: 10px;
     }
     
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 24px;
+    }
+    
     .hero-content h1 {
-        font-size: 22px;
+        font-size: 24px;
         line-height: 30px;
+    }
+    
+    .hero-content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 106px;
+        margin-bottom: 20px;
     }
     
     .cta-buttons {
         flex-direction: column;
         gap: 12px;
+        align-items: center;
     }
     
-    .project-card {
+    .btn {
+        padding: 10px 18px;
+        font-size: 14px;
         width: 100%;
+        max-width: 200px;
+    }
+    
+    section {
+        padding: 24px 0;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .skill-icons {
+        gap: 16px;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-icon i {
+        font-size: 20px;
+    }
+    
+    .achievement-card,
+    .project-card {
+        max-width: 280px;
+    }
+    
+    .achievement-info h3,
+    .project-info h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    /* Maintain smaller font for AI-POWERED DATA QUALITY MONITOR on mobile */
+    .project-card:nth-child(4) .project-info h3 {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    
+    .achievement-link,
+    .project-link {
+        font-size: 10px;
     }
     
     .experience-item {
         flex-direction: column;
+        margin-bottom: 20px;
     }
     
     .company-logo {
         margin-bottom: 12px;
+        margin-right: 0;
+    }
+    
+    .experience-content h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .description {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .contact {
+        padding: 24px 12px;
+    }
+    
+    .contact h2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .social-icons {
+        gap: 16px;
+    }
+    
+    .email {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 0 4px;
+    }
+    
+    header {
+        padding: 6px 8px;
+    }
+    
+    .logo-text {
+        font-size: 11px;
+    }
+    
+    .header-btn {
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+    
+    .hero-content h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .hero-content p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 88px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .achievement-card,
+    .project-card {
+        max-width: 250px;
+    }
+    
+    .achievement-info h3,
+    .project-info h3 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    /* Maintain smaller font for AI-POWERED DATA QUALITY MONITOR on small mobile */
+    .project-card:nth-child(4) .project-info h3 {
+        font-size: 10px;
+        line-height: 12px;
     }
 }
