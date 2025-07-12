@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#home" class="logo-text"><span class="heart">💗</span>VinhDinh<span class="heart">💗</span></a>
+            <a href="#home" class="logo-text"><span class="heart"> 💗 </span>VinhDinh<span class="heart"> 💗 </span></a>
         </div>
         <div class="header-buttons">
             <a href="#about" class="header-btn">About me</a>
@@ -22,13 +22,15 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="avatar">
+        <div class="avatar animate-on-scroll">
             <img src="assets/images/vinh-emoji.png" alt="Vinh Dinh" class="avatar-image">
         </div>
         <div class="hero-content">
-            <h1><span style="font-size: 90%;">Data-driven insights for</span><br><span class="gradient-text">Fintech & Banking</span></h1>
-            <p>Data Analyst Expert with proven expertise in the banking domain, transforming complex financial data into actionable strategies. Specializing in AI/ML applications, customer segmentation, and optimizing financial products for measurable business growth.</p>
-            <div class="cta-buttons">
+            <h1 class="animate-on-scroll"><span style="font-size: 90%;">Data-driven insights for</span><br><span class="gradient-text">Fintech & Banking</span></h1>
+            <p class="animate-on-scroll" style="font-size: 0.9em;">
+                Data Analyst Expert with proven expertise in the banking domain, transforming complex financial data into actionable strategies. Specializing in AI/ML applications, customer segmentation, and optimizing financial products for measurable business growth.
+            </p>
+            <div class="cta-buttons animate-on-scroll">
                 <a href="#contact" class="btn primary">Get in Touch</a>
                 <a href="assets/docs/index.pdf" class="btn secondary" download>Download CV</a>
             </div>
@@ -36,67 +38,81 @@
     </section>
 
     <section id="about" class="about">
-        <h2 class="section-title orange-gradient">ABOUT ME</h2>
-        <div class="about-content">
-            <p>
-                I am a Data Analyst Expert with extensive experience in the Fintech & Banking domain. My expertise lies in transforming complex financial data into actionable strategies that drive business growth and innovation.
+        <h2 class="section-title orange-gradient animate-on-scroll">ABOUT ME</h2>
+        <div class="about-content animate-on-scroll">
+            <p style="font-size: 0.9em;">
+                I'm a Data Analyst Expert with deep domain experience in Fintech & Banking. Over the past five years, I've worked at the intersection of AI, business strategy, and customer experience—translating complex datasets into high-impact solutions that drive revenue, product adoption, and operational efficiency.
             </p>
             <p>
-                With a strong background in AI/ML applications, customer segmentation, and financial product optimization, I have consistently delivered measurable results for leading financial institutions. My approach combines technical expertise with business acumen to create data-driven solutions that address real-world challenges.
+                At TymeBank and GoTyme Bank, I led AI-driven initiatives that increased monthly revenue by $125K and improved loan disbursement performance by 10%. At FE Credit, my market segmentation insights unlocked $87M in potential revenue and reshaped product pricing to boost premiums by 12%.
             </p>
             <p>
-                I am passionate about leveraging data to improve financial services and create better customer experiences. My goal is to continue pushing the boundaries of what's possible with data analysis in the banking sector.
+                My work spans customer journey analytics, GenAI implementation, ML-based segmentation, and data quality frameworks. I bring both business acumen and technical execution to every project—delivering measurable results, cross-functional collaboration, and scalable data products.
             </p>
         </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2>TECHNICAL EXPERTISE</h2>
+        <h2 class="animate-on-scroll">TECHNICAL EXPERTISE</h2>
         <div class="skill-icons">
-            <div class="skill-icon"><i class="fab fa-python"></i></div>
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="skill-icon"><i class="fas fa-robot"></i></div>
-            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <div class="skill-icon animate-on-scroll"><i class="fab fa-python"></i></div>
+            <div class="skill-icon animate-on-scroll"><i class="fas fa-database"></i></div>
+            <div class="skill-icon animate-on-scroll"><i class="fas fa-chart-line"></i></div>
+            <div class="skill-icon animate-on-scroll"><i class="fas fa-robot"></i></div>
+            <div class="skill-icon animate-on-scroll"><i class="fas fa-brain"></i></div>
         </div>
     </section>
 
     <section id="achievements" class="achievements">
-        <h2 class="section-title orange-gradient">KEY ACHIEVEMENTS</h2>
-        <div class="achievement-cards">
-            <div class="achievement-card">
-                <div class="achievement-image">
-                    <div class="achievement-image-placeholder">
-                        <i class="fas fa-users"></i>
-                        <span>Customer Segmentation</span>
-                    </div>
-                </div>
-                <div class="achievement-info">
-                    <p class="achievement-link">BANKING ANALYTICS</p>
-                    <h3>CUSTOMER CLUSTERING</h3>
-                    <a href="#" class="view-icon"><i class="fas fa-arrow-right"></i></a>
+        <h2 class="section-title orange-gradient animate-on-scroll">KEY ACHIEVEMENTS</h2>
+        <div class="achievement-cards new-achievement-cards">
+            <div class="new-achievement-card" onclick="toggleDetails(this)">
+                <div class="icon-box"><i class="fas fa-trophy"></i></div>
+                <div class="achievement-content">
+                    <div class="achievement-title">$125K</div>
+                    <div class="achievement-label">Monthly Revenue Increase</div>
+                    <div class="achievement-details">Achieved by advising UI/UX changes to better surface max loan offers based on segmentation insights.</div>
                 </div>
             </div>
-            <div class="achievement-card">
-                <div class="achievement-image">
-                    <div class="achievement-image-placeholder">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span>Loan Optimization</span>
-                    </div>
+            <div class="new-achievement-card" onclick="toggleDetails(this)">
+                <div class="icon-box"><i class="fas fa-search-dollar"></i></div>
+                <div class="achievement-content">
+                    <div class="achievement-title">$87M</div>
+                    <div class="achievement-label">Unlocked Customer Value</div>
+                    <div class="achievement-details">Identified untapped market segments through advanced data analytics and customer journey mapping.</div>
                 </div>
-                <div class="achievement-info">
-                    <p class="achievement-link">REVENUE GROWTH</p>
-                    <h3>LOAN FLOW REDESIGN</h3>
-                    <a href="#" class="view-icon"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="new-achievement-card" onclick="toggleDetails(this)">
+                <div class="icon-box"><i class="fas fa-arrow-up"></i></div>
+                <div class="achievement-content">
+                    <div class="achievement-title">10%</div>
+                    <div class="achievement-label">Loan Disbursement Increase</div>
+                    <div class="achievement-details">Optimized loan application flows using data-driven insights, resulting in higher completion rates.</div>
+                </div>
+            </div>
+            <div class="new-achievement-card" onclick="toggleDetails(this)">
+                <div class="icon-box"><i class="fas fa-brain"></i></div>
+                <div class="achievement-content">
+                    <div class="achievement-title">6</div>
+                    <div class="achievement-label">Customer Clusters Identified</div>
+                    <div class="achievement-details">Developed advanced segmentation models that revealed key user behavior patterns and AHA moments.</div>
+                </div>
+            </div>
+            <div class="new-achievement-card" onclick="toggleDetails(this)">
+                <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                <div class="achievement-content">
+                    <div class="achievement-title">32</div>
+                    <div class="achievement-label">Features Across 3 Markets</div>
+                    <div class="achievement-details">Built a comprehensive set of features for machine learning models serving South Africa, Philippines, and Vietnam markets.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title blue-gradient">PROJECTS</h2>
+        <h2 class="section-title blue-gradient animate-on-scroll">PROJECTS</h2>
         <div class="project-cards">
-            <div class="project-card">
+            <div class="project-card animate-on-scroll" onclick="window.open('https://github.com/thuyvinhdinh175/quant-agentic-AI', '_blank')">
                 <div class="project-image">
                     <div class="project-image-placeholder">
                         <i class="fas fa-robot"></i>
@@ -106,10 +122,10 @@
                 <div class="project-info">
                     <p class="project-link">PORTFOLIO PROJECT</p>
                     <h3>QUANT AGENTIC AI</h3>
-                    <a href="https://github.com/thuyvinhdinh175/quant-agentic-AI" class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
+                    <a class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card animate-on-scroll" onclick="window.open('#', '_blank')">
                 <div class="project-image">
                     <div class="project-image-placeholder">
                         <i class="fas fa-robot"></i>
@@ -119,10 +135,10 @@
                 <div class="project-info">
                     <p class="project-link">PORTFOLIO PROJECT</p>
                     <h3>CHATBOT FOR BANKING</h3>
-                    <a href="#" class="view-icon"><i class="fas fa-arrow-right"></i></a>
+                    <a class="view-icon"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card animate-on-scroll" onclick="window.open('https://github.com/thuyvinhdinh175/web-scraped-data-pipeline', '_blank')">
                 <div class="project-image">
                     <div class="project-image-placeholder">
                         <i class="fas fa-database"></i>
@@ -132,10 +148,10 @@
                 <div class="project-info">
                     <p class="project-link">PORTFOLIO PROJECT</p>
                     <h3>WEB-SCRAPED DATA PIPELINE</h3>
-                    <a href="https://github.com/thuyvinhdinh175/web-scraped-data-pipeline" class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
+                    <a class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card animate-on-scroll" onclick="window.open('https://github.com/thuyvinhdinh175/AI-powered-data-quality-monitor', '_blank')">
                 <div class="project-image">
                     <div class="project-image-placeholder">
                         <i class="fas fa-shield-alt"></i>
@@ -145,48 +161,103 @@
                 <div class="project-info">
                     <p class="project-link">PORTFOLIO PROJECT</p>
                     <h3>AI-POWERED DATA QUALITY MONITOR</h3>
-                    <a href="https://github.com/thuyvinhdinh175/AI-powered-data-quality-monitor" class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
+                    <a class="view-icon" target="_blank"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="experience" class="experience">
-        <h2 class="section-title orange-gradient">EXPERIENCE</h2>
+        <h2 class="section-title orange-gradient animate-on-scroll">EXPERIENCE</h2>
         <div class="experience-items">
-            <div class="experience-item">
+            <div class="experience-item animate-on-scroll">
                 <div class="company-logo">
                     <i class="fas fa-university"></i>
                 </div>
                 <div class="experience-content">
-                    <h3>Data Analyst Expert - Acting Leader at Tyme Vietnam</h3>
-                    <p class="duration">Jul 2022 - Present</p>
-                    <p class="description">
-                        Leading data analytics for TymeBank & GoTyme Bank, I've implemented AI/ML solutions that directly impact banking operations. Developed customer segmentation models that identified key AHA moments for enhancing the bank's application experience. Advised on strategic UI changes that increased monthly revenue by $125K and optimized loan flows for a 10% increase in disbursed amounts.
-                    </p>
+                    <h3>Data Analyst Expert – Acting Leader</h3>
+                    <p class="duration">Tyme Vietnam (TymeBank & GoTyme Bank) <span class="location" style="margin-left: 5em;">Jul 2022 – Present, Ho Chi Minh City</span></p>
+                    <div class="experience-details">
+                        <div class="experience-category">
+                            <p class="category-title">AI/ML Implementation:</p>
+                            <ul>
+                                <li>Spearheaded GenAI use cases including internal data chatbot, coding assistant, and story generation tool.</li>
+                                <li>Developed customer segmentation with K-Means and embeddings to identify product AHA moments.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">Strategic Product Impact:</p>
+                            <ul>
+                                <li>Advised on UI redesign to highlight eligible loan disbursement caps → +$125K/month.</li>
+                                <li>Suggested new flow for repeat borrowers → 10% increase in disbursed volume.</li>
+                                <li>Detected competitor leakage: 20% of approved loans were lost to higher external offers.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">Data Quality & Infrastructure:</p>
+                            <ul>
+                                <li>Managed Mixpanel across VN, PH, SA; ensured data integrity across 32+ features.</li>
+                                <li>Led cross-functional efforts with engineers to improve frontend event tracking and backend warehouse quality.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">Team & Stakeholder Management:</p>
+                            <ul>
+                                <li>Directed 3 data analysts supporting 18 feature teams.</li>
+                                <li>Mentored team members in analytics delivery, stakeholder management, and career progression.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="experience-item">
+            <div class="experience-item animate-on-scroll">
                 <div class="company-logo">
                     <i class="fas fa-credit-card"></i>
                 </div>
                 <div class="experience-content">
-                    <h3>Data Analyst Expert at FE Credit</h3>
-                    <p class="duration">Dec 2019 - Jun 2022</p>
-                    <p class="description">
-                        Collaborated with Data Science and McKinsey teams to develop ML models for customer journey mapping, churn prediction, and income modeling. Identified untapped market segments with potential for $87M in revenue. Redesigned pricing for the company's best-selling product, resulting in a 12% premium increase. Created data-driven sales strategies that boosted engagement and delivered a 16% sales uplift.
-                    </p>
+                    <h3>Data Analyst Expert</h3>
+                    <p class="duration">FE Credit – Advanced Analytics Department <span class="location" style="margin-left: 5em;">Dec 2019 – Jun 2022, Ho Chi Minh City</span></p>
+                    <div class="experience-details">
+                        <div class="experience-category">
+                            <p class="category-title">Advanced Analytics & ML:</p>
+                            <ul>
+                                <li>Collaborated with McKinsey and Data Science teams on churn, income, and journey models.</li>
+                                <li>Identified a lower-tier customer group contributing ~$87M in missed opportunity.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">UX & Product Optimization:</p>
+                            <ul>
+                                <li>Pinpointed app drop-offs tied to frequent notifications → improved customer retention.</li>
+                                <li>Redesigned product bundles and funnel strategy → 273% increase in conversion rate for linked products.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">Business Strategy Enablement:</p>
+                            <ul>
+                                <li>Created sales competition schemes that lifted field performance by 16%.</li>
+                                <li>Proposed and tested new loan funnel with 112% performance uplift.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-category">
+                            <p class="category-title">Operational Excellence:</p>
+                            <ul>
+                                <li>Owned 30% of ETL pipelines from Spark → Airflow → Tableau.</li>
+                                <li>Solved data sync and fraud detection via real-time behavioral tracking.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="experience-item">
+            <div class="experience-item animate-on-scroll">
                 <div class="company-logo">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="experience-content">
-                    <h3>Education - Foreign Trade University</h3>
-                    <p class="duration">2015 - 2019</p>
+                    <h3>Foreign Trade University</h3>
+                    <p class="duration">BBA – GPA 3.4/4.0 (2015 – 2019)</p>
                     <p class="description">
-                        Bachelor of Business Administration with a GPA of 3.4/4.0. Received recognition as Top 1 from Fecredit Management Associate Program for future leaders in 2022. Built a strong foundation in business principles that I've successfully applied to data analysis in the financial sector.
+                        🏅 <i>Top 1 from FE Credit Management Associate Program (2022)</i>
                     </p>
                 </div>
             </div>
@@ -206,5 +277,180 @@
         </div>
     </section>
     <script src="assets/js/background.js"></script>
+<script>
+    // Variable to track the current timeout
+    let autoCloseTimeout;
+    
+    // Function to handle scroll animations
+    function handleScrollAnimations() {
+        const windowHeight = window.innerHeight;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const isInitialLoad = window.initialPageLoad || false;
+        
+        // Get all section elements for proper ordering
+        const sections = ['#home', '#about', '#skills', '#achievements', '#projects', '#experience', '#contact'];
+        
+        // Create a priority map to ensure proper section order
+        const sectionPriorities = {};
+        sections.forEach((section, index) => {
+            sectionPriorities[section] = index;
+        });
+        
+        // Collect all elements that need to be animated (both regular and achievement cards)
+        const allAnimatedElements = [];
+        
+        // Add regular animated elements
+        document.querySelectorAll('.animate-on-scroll:not(.visible):not(.project-card)').forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < windowHeight - 50) {
+                allAnimatedElements.push({
+                    element: element,
+                    section: getClosestSection(element, sections),
+                    top: rect.top,
+                    type: 'regular',
+                    // Element should appear instantly if either:
+                    // 1. It's above the viewport (scrolled past)
+                    // 2. We're in a fast-scroll scenario (not initial page load)
+                    instant: rect.top < 0 || !isInitialLoad
+                });
+            }
+        });
+        
+        // Add project card elements
+        document.querySelectorAll('.project-card.animate-on-scroll:not(.visible)').forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < windowHeight - 100) {
+                allAnimatedElements.push({
+                    element: element,
+                    section: getClosestSection(element, sections),
+                    top: rect.top,
+                    type: 'regular', // Use regular type for project cards
+                    // Element should appear instantly if either:
+                    // 1. It's above the viewport (scrolled past)
+                    // 2. We're in a fast-scroll scenario (not initial page load)
+                    instant: rect.top < 0 || !isInitialLoad
+                });
+            }
+        });
+        
+        // Add achievement card elements
+        document.querySelectorAll('.new-achievement-card:not(.visible-card)').forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < windowHeight - 100) {
+                allAnimatedElements.push({
+                    element: element,
+                    section: getClosestSection(element, sections),
+                    top: rect.top,
+                    type: 'card',
+                    // Element should appear instantly if either:
+                    // 1. It's above the viewport (scrolled past)
+                    // 2. We're in a fast-scroll scenario (not initial page load)
+                    instant: rect.top < 0 || !isInitialLoad
+                });
+            }
+        });
+        
+        // Sort all elements by their section first, then by position within section
+        allAnimatedElements.sort((a, b) => {
+            // If they're in different sections, sort by section priority
+            if (a.section !== b.section) {
+                return sectionPriorities[a.section] - sectionPriorities[b.section];
+            }
+            
+            // Otherwise, sort by vertical position
+            return a.top - b.top;
+        });
+        
+        // Get a base delay - shorter for non-initial loads
+        const baseDelay = isInitialLoad ? 47 : 20;
+        
+        // Animate all elements in order
+        allAnimatedElements.forEach((item, index) => {
+            // If element should appear instantly, show it right away
+            if (item.instant) {
+                if (item.type === 'regular') {
+                    item.element.classList.add('visible');
+                } else if (item.type === 'card') {
+                    item.element.classList.add('visible-card');
+                }
+                return;
+            }
+            
+            const delay = index * baseDelay; // Delay based on the context
+            
+            setTimeout(() => {
+                if (item.type === 'regular') {
+                    item.element.classList.add('visible');
+                } else if (item.type === 'card') {
+                    item.element.classList.add('visible-card');
+                }
+            }, delay);
+        });
+    }
+    
+    // Helper function to get the closest section for an element
+    function getClosestSection(element, sections) {
+        for (let parent = element; parent; parent = parent.parentElement) {
+            for (const section of sections) {
+                if (parent.matches(section)) {
+                    return section;
+                }
+            }
+        }
+        return null; // Default if no section found
+    }
+    
+    // Toggle details function
+    function toggleDetails(card) {
+        // First, clear any existing timeout
+        if (autoCloseTimeout) {
+            clearTimeout(autoCloseTimeout);
+        }
+        
+        // Close any other open cards
+        const allCards = document.querySelectorAll('.new-achievement-card');
+        allCards.forEach(otherCard => {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+                otherCard.classList.remove('expanded');
+                const otherDetails = otherCard.querySelector('.achievement-details');
+                otherDetails.classList.remove('visible');
+            }
+        });
+        
+        // Now toggle the clicked card
+        card.classList.toggle('expanded');
+        
+        // Find the details element within this card
+        const details = card.querySelector('.achievement-details');
+        
+        // Toggle visibility class for animation
+        details.classList.toggle('visible');
+        
+        // If the card is now expanded, set a timeout to auto-close it after 7 seconds
+        if (card.classList.contains('expanded')) {
+            autoCloseTimeout = setTimeout(() => {
+                card.classList.remove('expanded');
+                details.classList.remove('visible');
+            }, 7000); // 7 seconds
+        }
+    }
+    
+    // Run animations immediately for visible elements when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set a flag to identify the initial page load
+        window.initialPageLoad = true;
+        
+        // Immediately trigger animations for elements already in the viewport
+        handleScrollAnimations();
+        
+        // After initial animations, reset the flag
+        setTimeout(() => {
+            window.initialPageLoad = false;
+        }, 500);
+    });
+    
+    // Also trigger animations when scrolling
+    window.addEventListener('scroll', handleScrollAnimations);
+</script>
 </body>
 </html>

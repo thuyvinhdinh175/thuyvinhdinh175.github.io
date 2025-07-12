@@ -345,11 +345,13 @@ header {
 }
 
 .achievement-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .achievement-card {
@@ -415,6 +417,14 @@ header {
     margin: 0;
 }
 
+/* Special styling for longer achievement titles */
+.achievement-card:nth-child(1) .achievement-info h3,
+.achievement-card:nth-child(2) .achievement-info h3,
+.achievement-card:nth-child(3) .achievement-info h3 {
+    font-size: 13px;
+    line-height: 14px;
+}
+
 /* Projects Section */
 .projects {
     padding: 48px 0;
@@ -437,6 +447,42 @@ header {
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
+    cursor: pointer; /* Add pointer cursor to indicate clickability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.375s ease, transform 0.375s ease, box-shadow 0.3s ease;
+}
+
+.project-card.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover {
+    transform: translateY(-5px) !important; /* Use !important to override animation transforms */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Add arrow indicator like in achievement cards */
+.project-card::after {
+    content: "\f078"; /* Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover::after {
+    transform: rotate(-45deg); /* Diagonal arrow on hover */
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .project-image {
@@ -467,7 +513,7 @@ header {
 
 .project-info {
     position: relative;
-    padding: 12px 16px;
+    padding: 12px 16px 12px 16px; /* Increased top padding for more space */
     height: 22%;
     display: flex;
     flex-direction: column;
@@ -477,8 +523,8 @@ header {
 .project-link {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
-    font-size: 8px;
-    line-height: 15px;
+    font-size: 9px; /* Reduced by another 25% from 12px */
+    line-height: 16px; /* Adjusted for the new font size */
     text-transform: uppercase;
     color: var(--secondary-text);
     margin: 0;
@@ -490,7 +536,8 @@ header {
     font-size: 15px;
     line-height: 16px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 3px 0 0 0; /* Adjusted for smaller project-link text */
+    padding-right: 20px; /* Add space for the hover arrow */
 }
 
 /* Special styling for AI-POWERED DATA QUALITY MONITOR card */
@@ -500,20 +547,7 @@ header {
 }
 
 .view-icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.view-icon i {
-    transform: rotate(-45deg);
-    font-size: 14px;
+    display: none; /* Hide the existing view icon since we now have the hover arrow */
 }
 
 /* Experience Section */
@@ -549,30 +583,56 @@ header {
     flex: 1;
 }
 
+/* Updated Experience Section Styles */
 .experience-content h3 {
     font-weight: 700;
-    font-size: 18px; /* Increased from 17px */
-    line-height: 28px; /* Increased from 26px */
-    margin-bottom: 5px; /* Increased from 4px */
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    color: var(--primary-text);
 }
 
 .duration {
-    font-size: 12px; /* Increased from 11px */
+    font-size: 14px;
     line-height: 150%;
     color: var(--light-grey);
-    margin-bottom: 14px; /* Increased from 12px */
+    margin-bottom: 14px;
     display: block;
-    font-weight: 500; /* Enhanced weight */
+    font-weight: 500;
 }
 
-.description {
-    font-size: 12.65px; /* Increased by 15% from 11px */
-    line-height: 160%; /* Increased from 150% for better readability */
-    color: #a0a9b8; /* Slightly darker than var(--light-grey) for better readability */
-    text-align: justify; /* Ensure rectangular text block */
-    hyphens: none; /* Disable hyphenation to prevent word breaks */
-    word-break: keep-all; /* Prevent breaking words */
-    font-weight: 400; /* Slightly enhanced weight for better visibility */
+.location {
+    font-weight: 400;
+    color: var(--secondary-text);
+    font-style: italic;
+}
+
+.experience-details {
+    color: var(--secondary-text);
+}
+
+.experience-category {
+    margin-bottom: 14px;
+}
+
+.category-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--primary-text);
+}
+
+.experience-details ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.experience-details li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    font-weight: 400;
 }
 
 /* Contact Section */
@@ -651,6 +711,186 @@ header {
     margin-right: 8px;
 }
 
+/* New Achievement Cards Layout */
+.new-achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.new-achievement-card {
+    background: var(--card-bg);
+    padding: 24px 28px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    min-height: 110px;
+    height: 100%;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s;
+}
+
+/* Achievement cards container */
+.new-achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* All achievement cards */
+.achievement-details {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    margin-top: 0;
+    line-height: 1.4;
+    font-weight: 400;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    text-align: left;
+    opacity: 0;
+}
+
+.achievement-details.visible {
+    max-height: 200px; /* Large enough to fit the content */
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Scroll animation for achievement cards */
+.new-achievement-card {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for all cards */
+    cursor: pointer; /* Show pointer on hover */
+    position: relative; /* For absolute positioning of ::after element */
+    min-height: 110px; /* Ensure consistent minimum height */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.375s ease, transform 0.375s ease, box-shadow 0.2s ease; /* Increased by 50% from 0.25s */
+}
+
+.new-achievement-card.visible-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-achievement-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.15);
+}
+
+.new-achievement-card::after {
+    content: "\f078"; /* Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.new-achievement-card.expanded::after {
+    transform: rotate(180deg);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Auto-close timeout without visual indicator */
+
+/* First row takes full width */
+.new-achievement-card:nth-child(1),
+.new-achievement-card:nth-child(2),
+.new-achievement-card:nth-child(3) {
+    margin-bottom: 24px;
+}
+
+/* Scroll animations for various elements */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.375s ease, transform 0.375s ease; /* Increased by 50% from 0.25s */
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: 14px;
+    background: var(--orange-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    position: absolute; /* Fixed position */
+    top: 24px; /* Match the padding of the card */
+    left: 28px; /* Match the padding of the card */
+}
+
+.icon-box i {
+    color: #fff;
+    font-size: 32px;
+}
+
+.achievement-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    flex: 1; /* Fill vertical space */
+    margin-left: 76px; /* Width of icon-box (56px) + right margin (20px) */
+    padding-top: 2px; /* Small adjustment for vertical alignment */
+}
+
+/* Make both the 4th and 5th achievement cards text left-aligned */
+.new-achievement-card:nth-child(4) .achievement-content,
+.new-achievement-card:nth-child(5) .achievement-content {
+    align-items: flex-start; /* Align content to the left */
+}
+
+.new-achievement-card:nth-child(4) .achievement-title,
+.new-achievement-card:nth-child(4) .achievement-label,
+.new-achievement-card:nth-child(5) .achievement-title,
+.new-achievement-card:nth-child(5) .achievement-label {
+    text-align: left; /* Left-align text */
+}
+
+.achievement-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #FF8660;
+    line-height: 1;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.achievement-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text);
+    font-weight: 500;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    line-height: 1.3;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     body {
@@ -674,14 +914,19 @@ header {
     }
     
     .achievement-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
     }
     
     .achievement-card {
         width: 100%;
-        max-width: 400px;
+    }
+    .new-achievement-cards {
+      max-width: 700px;
+      /* Flex layout already handles responsiveness */
+    }
+    .new-achievement-card {
+      width: calc(50% - 12px); /* Adjust width for 2-column layout with gap */
     }
 }
 
@@ -757,9 +1002,8 @@ header {
     }
     
     .achievement-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        grid-template-columns: 1fr;
+        max-width: 350px;
     }
     
     .project-cards {
@@ -803,6 +1047,30 @@ header {
     .social-icons {
         margin-left: 0;
     }
+    .new-achievement-cards {
+      max-width: 400px;
+    }
+    .new-achievement-card {
+      width: 100%; /* Full width on smaller screens */
+      padding: 18px 14px;
+    }
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      margin-right: 14px;
+    }
+    .icon-box i {
+      font-size: 24px;
+    }
+    .achievement-title {
+      font-size: 1.4rem;
+    }
+    .achievement-label {
+      font-size: 0.95rem;
+    }
+    /* All styles for achievement cards in this layout are handled by the flex container */
 }
 
 @media (max-width: 480px) {
@@ -902,7 +1170,7 @@ header {
     
     .achievement-link,
     .project-link {
-        font-size: 10px;
+        font-size: 9px; /* Kept consistent with main size */
     }
     
     .experience-item {
@@ -941,6 +1209,33 @@ header {
     .email {
         font-size: 10px;
         line-height: 14px;
+    }
+    .new-achievement-cards {
+      max-width: 98vw;
+      gap: 18px;
+    }
+    .new-achievement-card {
+      padding: 12px 8px;
+    }
+    .icon-box {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      min-height: 36px;
+      margin-right: 8px;
+    }
+    .icon-box i {
+      font-size: 18px;
+    }
+    .achievement-title {
+      font-size: 1.1rem;
+    }
+    .achievement-label {
+      font-size: 0.85rem;
+    }
+    .new-achievement-card:nth-child(4),
+    .new-achievement-card:nth-child(5) {
+      grid-column: auto;
     }
 }
 
