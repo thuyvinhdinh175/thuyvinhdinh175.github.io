@@ -1,0 +1,239 @@
+/* Improved Achievement Cards for Mobile-Desktop Synchronization */
+
+/* Remove the fixed positioning and improve the grid layout */
+.new-achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Reset the card to use better flex layout */
+.new-achievement-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    min-height: 100px;
+    width: auto !important; /* Override fixed width */
+    opacity: 0;
+    transform: translateY(20px);
+    flex: none; /* Remove flex behavior from cards */
+}
+
+/* Remove absolute positioning from icon box */
+.icon-box {
+    position: static !important;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background: var(--orange-gradient);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+/* Fix content alignment */
+.achievement-content {
+    margin-left: 0 !important; /* Remove fixed margin */
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+/* Ensure consistent text styling */
+.achievement-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FF8660;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+.achievement-label {
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+    font-weight: 500;
+    line-height: 1.3;
+    white-space: normal;
+}
+
+/* Desktop - maintain 3 columns */
+@media (min-width: 1025px) {
+    .new-achievement-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    /* Center the last row with 2 items */
+    .new-achievement-card:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+    
+    .new-achievement-card:nth-child(5) {
+        grid-column: 2 / 3;
+    }
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .new-achievement-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Mobile - single column with better spacing */
+@media (max-width: 768px) {
+    .new-achievement-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 12px;
+        max-width: 100%;
+    }
+
+    .new-achievement-card {
+        padding: 16px;
+        min-height: 90px;
+        width: 100% !important;
+    }
+
+    .icon-box {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        margin-right: 12px;
+    }
+
+    .icon-box i {
+        font-size: 22px;
+    }
+
+    .achievement-title {
+        font-size: 1.6rem;
+    }
+
+    .achievement-label {
+        font-size: 0.9rem;
+    }
+
+    /* Remove special alignment for cards 4 and 5 on mobile */
+    .new-achievement-card:nth-child(4) .achievement-content,
+    .new-achievement-card:nth-child(5) .achievement-content {
+        align-items: flex-start;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .new-achievement-cards {
+        padding: 0 8px;
+        gap: 14px;
+    }
+
+    .new-achievement-card {
+        padding: 14px;
+        min-height: 80px;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    .icon-box i {
+        font-size: 20px;
+    }
+
+    .achievement-title {
+        font-size: 1.4rem;
+    }
+
+    .achievement-label {
+        font-size: 0.85rem;
+    }
+
+    .achievement-details {
+        font-size: 0.75rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .new-achievement-card {
+        padding: 12px;
+        min-height: 70px;
+    }
+
+    .icon-box {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+    }
+
+    .icon-box i {
+        font-size: 18px;
+    }
+
+    .achievement-title {
+        font-size: 1.2rem;
+    }
+
+    .achievement-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Improved details animation */
+.achievement-details {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    margin-top: 0;
+    line-height: 1.4;
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+}
+
+.achievement-details.visible {
+    max-height: 200px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Better hover states */
+.new-achievement-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+/* Ensure arrow indicator stays in place */
+.new-achievement-card::after {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Ensure proper animation on scroll */
+.new-achievement-card.visible-card {
+    opacity: 1;
+    transform: translateY(0);
+}

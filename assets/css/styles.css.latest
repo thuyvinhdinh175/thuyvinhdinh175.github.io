@@ -1,0 +1,82 @@
+/* Previously written content remains the same */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
+    
+    header {
+        padding: 12px 16px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
+    }
+    
+    .header-buttons {
+        gap: 4px;
+    }
+    
+    .header-btn {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+    
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 32px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    
+    .avatar {
+        width: 160px;
+        height: 142px;
+        margin-bottom: 24px;
+    }
+    
+    .cta-buttons {
+        gap: 12px;
+    }
+    
+    .btn {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+    
+    section {
+        padding: 32px 0;
+    }
+    
+    .skill-icons {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Mobile version: Stack achievement cards vertically */
+    #achievements .new-achievement-cards,
+    #achievements .achievement-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    #achievements .new-achievement-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

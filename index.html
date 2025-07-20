@@ -40,13 +40,13 @@
     <section id="about" class="about">
         <h2 class="section-title orange-gradient animate-on-scroll">ABOUT ME</h2>
         <div class="about-content animate-on-scroll">
-            <p>
+            <p style="font-size: 0.9em;">
                 I'm a Data Analyst Expert with deep domain experience in Fintech & Banking. Over the past five years, I've worked at the intersection of AI, business strategy, and customer experience—translating complex datasets into high-impact solutions that drive revenue, product adoption, and operational efficiency.
             </p>
-            <p>
+            <p style="font-size: 0.9em;">
                 At TymeBank, I led an initiatives that increased monthly revenue by $125K and improved loan disbursement performance by 10%. At FE Credit, my market segmentation insights unlocked $87M in potential revenue and reshaped product pricing to boost premiums by 12%.
             </p>
-            <p>
+            <p style="font-size: 0.9em;">
                 My work spans customer journey analytics, GenAI implementation, ML-based segmentation, and data quality frameworks. I bring both business acumen and technical execution to every project—delivering measurable results, cross-functional collaboration, and scalable data products.
             </p>
         </div>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="experience-content">
                     <h3>Data Analyst Expert – Acting Leader</h3>
-                    <p class="duration">Tyme Vietnam (TymeBank & GoTyme Bank) <span class="location" style="margin-left: 5em;">Jul 2022 – Present, Ho Chi Minh City</span></p>
+                    <p class="duration">Tyme Vietnam (TymeBank & GoTyme Bank) <span class="location">Jul 2022 – Present, Ho Chi Minh City</span></p>
                     <div class="experience-details">
                         <div class="experience-category">
                             <p class="category-title">AI/ML Implementation:</p>
@@ -216,7 +216,7 @@
                 </div>
                 <div class="experience-content">
                     <h3>Data Analyst Expert</h3>
-                    <p class="duration">FE Credit – Advanced Analytics Department <span class="location" style="margin-left: 5em;">Dec 2019 – Jun 2022, Ho Chi Minh City</span></p>
+                    <p class="duration">FE Credit – Advanced Analytics Department <span class="location">Dec 2019 – Jun 2022, Ho Chi Minh City</span></p>
                     <div class="experience-details">
                         <div class="experience-category">
                             <p class="category-title">Advanced Analytics & ML:</p>
@@ -407,32 +407,31 @@
             clearTimeout(autoCloseTimeout);
         }
         
-        // Close any other open cards
+        // Get the current expanded state of the clicked card
+        const isCurrentlyExpanded = card.classList.contains('expanded');
+        
+        // Close all cards first
         const allCards = document.querySelectorAll('.new-achievement-card');
         allCards.forEach(otherCard => {
-            if (otherCard !== card && otherCard.classList.contains('expanded')) {
-                otherCard.classList.remove('expanded');
-                const otherDetails = otherCard.querySelector('.achievement-details');
-                otherDetails.classList.remove('visible');
-            }
+            otherCard.classList.remove('expanded');
+            const otherDetails = otherCard.querySelector('.achievement-details');
+            otherDetails.classList.remove('visible');
         });
         
-        // Now toggle the clicked card
-        card.classList.toggle('expanded');
-        
-        // Find the details element within this card
-        const details = card.querySelector('.achievement-details');
-        
-        // Toggle visibility class for animation
-        details.classList.toggle('visible');
-        
-        // If the card is now expanded, set a timeout to auto-close it after 7 seconds
-        if (card.classList.contains('expanded')) {
+        // If the clicked card wasn't expanded before, expand it
+        if (!isCurrentlyExpanded) {
+            // Expand the clicked card
+            card.classList.add('expanded');
+            const details = card.querySelector('.achievement-details');
+            details.classList.add('visible');
+            
+            // Set auto-close timeout
             autoCloseTimeout = setTimeout(() => {
                 card.classList.remove('expanded');
                 details.classList.remove('visible');
             }, 7000); // 7 seconds
         }
+        // If it was expanded, it's now closed (we closed all cards above)
     }
     
     // Run animations immediately for visible elements when page loads
