@@ -4,13 +4,13 @@ This repository contains my personal website and online resume.
 
 ## About
 
-I am a data analytics leader with extensive experience in leveraging AI/ML and advanced data analysis to drive business strategies and product development. My expertise spans across customer segmentation, product optimization, and data-driven decision making.
+I am an AI/ML Analytics leader with extensive experience in leveraging machine learning and advanced data analysis to drive business strategies and product development. My expertise spans across customer segmentation, product optimization, and data-driven decision making in the Fintech & Banking domain.
 
 ## Website Content
 
 This website showcases:
 - My professional experience at Tyme Group and FE Credit
-- Technical skills in Python, Scala, SQL, and various BI tools
+- Technical skills in Python, SQL, ML/AI, and various BI tools including Mixpanel and LookerML
 - Education background
 - Awards and achievements
 - Downloadable resume
@@ -27,7 +27,7 @@ thuyvinhdinh175.github.io/
 │   │   ├── Portfolio.png    # Background image
 │   │   └── vinh-emoji.png   # Avatar image
 │   └── docs/                # Documents
-│       └── index.pdf        # Downloadable CV
+│       └── [DS:DA]Dinh_Thuy_Vinh.pdf        # Downloadable CV
 └── README.md                # Project documentation
 ```
 
